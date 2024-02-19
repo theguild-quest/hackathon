@@ -6,6 +6,7 @@ The frontend repository for THE GUILD, powered by Next.js v14 and Apollo Client 
     <source srcset="./logo_preview_dark.png"  media="(prefers-color-scheme: dark)"></source>
     <img src="./logo_preview_light.png"></img>
 </picture>
+
 ## Tech Stack
 
 **Client:** NextJS, Apollo Client, SASS-Modules
