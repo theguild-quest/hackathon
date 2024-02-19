@@ -1,0 +1,95 @@
+@import @/theme
+
+.solverInformationContainer
+  padding: spacing(10) spacing(9) spacing(10) spacing(13)
+  @include box()
+  border-radius: 0 spacing(2) spacing(2) 0
+  border-left: 0
+  width: 100%
+  box-shadow: -15px -15px 15px -15px rgba(0, 0, 0, 0.51) inset, 0px 15px 15px -15px rgba(0, 0, 0, 0.51) inset
+  overflow-y: auto
+  @include media("<sm")
+    padding: 0
+    width: 100%
+    background: unset
+    border: none
+    box-shadow: none
+
+.profileSettingBlock
+  @include media("<sm")
+    display: none
+
+.links
+  display: flex
+  flex-direction: column
+  gap: 15px
+  @include media("<sm")
+    gap: spacing(3)
+
+.contentBlock
+  display: flex
+  gap: 100px
+  @include media("<sm")
+    flex-direction: column
+    gap: spacing(9)
+
+.content
+  display: flex
+  flex-direction: column
+  column-gap: 100px
+  row-gap: 40px
+  @include media("<sm")
+    display: flex
+    flex-direction: column
+    gap: spacing(9)
+    flex-wrap: nowrap
+
+.availabilityBlock
+  display: flex
+  flex-direction: column
+  gap: spacing(3)
+
+.arrowBlock
+  display: flex
+  align-items: center
+  justify-content: start
+  @media (min-width: 768px)
+    display: none
+
+.arrowBack
+  cursor: pointer
+  @media (min-width: 768px)
+    display: none
+
+.input
+  width: 426px !important
+  @include media("<sm")
+    min-width: 0 !important
+    width: 100% !important
+
+.textarea
+  width: 426px !important
+  @include media("<sm")
+    min-width: 0 !important
+    width: 100% !important
+    min-height: 227px !important
+
+.title
+  @include media("<sm")
+    font-size: 12px !important
+
+.toggle
+  display: flex
+  align-items: center
+  gap: 10px
+  margin-top: 4px
+.button
+  margin-top: 52px
+  @include media("<sm")
+    margin-top: 46px
+
+.loadingContainer
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center

@@ -1,0 +1,71 @@
+@import @/theme
+
+.optionsStep
+  width: 800px
+  display: flex
+  flex-direction: column
+  pointer-events: none
+  @include media("<sm")
+    padding: 0 spacing(5)
+    width: 100vw
+    height: 100vh
+
+.content
+  display: flex
+  border-top: 1px solid $separator-color
+  border-bottom: 1px solid $separator-color
+  flex-direction: column
+  gap: spacing(1)
+
+.option
+  padding: spacing(3) spacing(12)
+  @include media("<sm")
+    padding: spacing(3) 0
+    font-size: 14px
+
+.info
+  color: #575758
+
+.selected
+  color: $pink
+
+.header
+  display: flex
+  flex-direction: column
+  gap: spacing(4)
+  padding: spacing(4) spacing(12)
+  @include media("<sm")
+    margin-top: spacing(18)
+    width: 100%
+    padding: 0
+
+.desc
+  padding-bottom: spacing(4)
+  max-width: 80%
+  font-size: 22px
+  & span
+    font-size: 18px
+  @include media("<sm")
+    max-width: 100%
+    font-size: 16px
+    line-height: 160%
+
+.footer
+  padding: spacing(12)
+  display: flex
+  justify-content: space-between
+  gap: spacing(6)
+  @include media("<sm")
+    flex-direction: column
+    padding: spacing(3) 0
+
+.separator
+  background: $separator-color
+  height: 1px
+  width: 100%
+  opacity: 50%
+
+.next
+  text-decoration: underline
+  @include media("<sm")
+    align-self: center

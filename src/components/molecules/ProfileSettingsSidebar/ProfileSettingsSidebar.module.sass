@@ -1,0 +1,72 @@
+@import @/theme
+
+.settingsContainer
+  position: relative
+  min-width: 300px
+  height: 100%
+  // min-height: 868px
+  border-bottom-left-radius: 8px
+  border-top-left-radius: 8px
+  border-bottom: 1px solid #1E1E22
+  border-top: 1px solid #1E1E22
+  border-left: 1px solid #1E1E22
+  border-right: 1px solid #575758
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  padding: spacing(10) spacing(5)
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: spacing(10)
+  @include media("<sm")
+    background: none
+    border: none
+    box-shadow: none
+    padding: spacing(10) spacing(0)
+    gap: spacing(16)
+
+.LinkBlock
+  display: flex
+  flex-direction: column
+  gap: spacing(6)
+  width: 100%
+  padding: 0 spacing(6)
+
+.link
+  display: flex
+  align-items: center
+  justify-content: center
+  &.active
+    color: $pink
+  @include media("<sm")
+    width: 100%
+    border-bottom: 1px solid #575758
+    padding-bottom: spacing(4)
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.arrowBack
+  cursor: pointer
+  position: absolute
+  top: spacing(8)
+  left: 0px
+  display: block
+  @media (min-width: 768px)
+    display: none
+
+.icon
+  display: block
+  @media (min-width: 768px)
+    display: none
+
+.line
+  width: 100%
+  height: 1px
+  background: #575758
+  @include media("<sm")
+    display: none
+
+.activeTitle
+  color: var(--Pink, #DA5A5A)
+  font-weight: 700

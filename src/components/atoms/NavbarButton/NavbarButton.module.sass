@@ -1,0 +1,128 @@
+@import @/theme
+
+.navbarButton
+  position: relative
+  height: spacing(13)
+  border-radius: spacing(2)
+  border: 1px solid #1A1A1A
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 4px 4px 8px 0px #050506, -4px -4px 8px 0px rgba(20, 46, 61, 0.39)
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 0 spacing(4)
+  gap: spacing(4)
+  transition: box-shadow 0.1s ease
+
+  &:disabled
+    opacity: 0.5
+    cursor: not-allowed
+
+  &:active
+    box-shadow: 0px 0px 0px 0px #050506, 0px 0px 0px 0px rgba(20, 46, 61, 0.39)
+
+  &.iconButton
+    padding: 0
+    width: spacing(13)
+    border-radius: 50%
+
+  &.notification::before
+    position: absolute
+    content: ""
+    border-radius: 50%
+    background: $pink
+    width: spacing(3)
+    height: spacing(3)
+    border: 1px solid $text-color
+    left: 0
+    top: 0
+
+  // Button variants
+  &--default
+
+  &--secondary
+    background-color: gray
+    color: white
+
+    &:active
+      color: gray
+
+    &::before
+      background: gray
+
+  &--outline
+    background-color: transparent
+    color: $secondary-color
+    border: 1px solid $text-color
+
+    &:active
+      color: gray
+
+    &::before
+      background: $primary-color
+
+    // Button color
+
+    &.color-primary
+      --color: $primary-color
+
+    &.color-secondary
+      --color: $secondary-color
+
+    &.color-dark
+      --color: $dark-color
+
+    &.color-pastel
+      --color: $pastel-color
+
+    &.color-light
+      --color: $light-color
+
+    &.color-primary
+      --color: $primary-color
+
+    &.color-secondary
+      --color: $secondary-color
+
+    &.color-dark
+      --color: $dark-color
+
+    &.color-pastel
+      --color: $pastel-color
+
+    &.color-light
+      --color: $light-color
+
+    // Text colors
+    &.text-color-primary
+      color: $primary-color
+
+    &.text-color-secondary
+      color: $secondary-color
+
+    &.text-color-dark
+      color: $dark-color
+
+    &.text-color-pastel
+      color: $pastel-color
+
+    &.text-color-light
+      color: $light-color
+
+.menuButton
+  background: none
+  border: none
+  padding: 0
+  &:active
+    box-shadow: none
+
+.menuNotification
+  position: absolute
+  content: ""
+  border-radius: 50%
+  background: $pink
+  width: spacing(3)
+  height: spacing(3)
+  border: 1px solid $text-color
+  right: -30%
+  top: -20%

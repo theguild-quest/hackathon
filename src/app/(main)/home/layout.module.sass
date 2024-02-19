@@ -1,0 +1,40 @@
+@import @/theme
+
+.tabsWrapper
+  padding-top: spacing(10)
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  @include media("<sm")
+    padding-top: spacing(21)
+
+.content
+  display: flex
+  justify-content: center
+  gap: spacing(8)
+  height: calc(100% - 102px) // 70px height of the tabs bar + 32px gap between aside component with features and spotlight to mitigat 'gap' from flex component
+
+.sidebar
+  display: flex
+  flex-direction: column
+  gap: spacing(8)
+  position: sticky
+  top: 0
+  left: 0
+  padding-top: spacing(2)
+  z-index: -1
+  &:last-child
+    padding-top: spacing(9)
+  @include media("<sm")
+    display: none
+
+.additionalInfoWrapper
+  display: flex
+  flex-direction: column
+  gap: spacing(4)
+  margin-top: auto
+
+.separator
+  background: $pastel
+  height: 22px
+  width: 1px

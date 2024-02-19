@@ -1,0 +1,133 @@
+@import @/theme
+
+.desktopNavbar
+  width: 100vw
+  height: 114px
+  background: $background-global
+  position: fixed
+  z-index: 200
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 spacing(12)
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+  @include media("<sm")
+    display: none
+
+.mobileNavbar
+  position: absolute
+  top: 0
+  width: 100vw
+  @include media(">sm")
+    display: none
+
+.headerStatic
+  width: 100%
+  padding: spacing(4) spacing(5)
+  position: fixed
+  top: 0
+  z-index: 200
+  display: flex
+  align-items: center
+  justify-content: space-between
+  backdrop-filter: blur(5px)
+  & .logo
+    height: spacing(9)
+    width: auto
+
+.links
+  display: flex
+  align-items: center
+  gap: spacing(13)
+  & *:first-child
+    margin-right: spacing(8)
+  @include media("<sm")
+    display: none
+
+.userNavigation
+  display: flex
+  align-items: center
+  gap: spacing(7)
+  @include media("<sm")
+    display: none
+
+.searchIcon
+  border-radius: 6px
+  padding: spacing(2)
+  background: #0C0C0C
+
+.overlay
+  height: 100%
+  position: fixed
+  z-index: 101
+  top: 0
+  left: 0
+  color: $white
+  background: #0F1118
+  overflow: scroll
+  overscroll-behavior: contain
+  transform: translateX(-100%)
+  transition: transform 0.3s
+  overscroll-behavior: auto
+
+.overlayContent
+  width: 100%
+  top: spacing(12)
+  padding: 0 spacing(5)
+  position: relative
+  display: flex
+  align-items: center
+  flex-direction: column
+  overscroll-behavior: auto
+
+.overlay[aria-hidden="false"]
+  transform: translateX(0%)
+  overscroll-behavior: contain
+
+.userInfoContainer
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  padding: spacing(10) 0
+  border-bottom: 0.5px solid $grey
+
+.userInfo
+  display: flex
+  gap: spacing(3)
+
+.userInfoDetails
+  display: flex
+  flex-direction: column
+  gap: spacing(3)
+  height: 100
+  justify-content: space-evenly
+  font-weight: 500
+
+.userTag
+  & > span
+    color: $grey
+    font-weight: 300
+
+.mobileList
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: 100%
+  padding: spacing(10) 0
+  border-bottom: 0.5px solid $grey
+
+.mobileListText
+  font-weight: 500
+  letter-spacing: 1px
+
+.additionalInfoWrapper
+  width: 100%
+  align-self: flex-start
+  padding: spacing(10) 0
+  display: flex
+  flex-direction: column
+  gap: spacing(3)
+
+.mobileNavbar

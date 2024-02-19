@@ -1,0 +1,28 @@
+@import @/theme
+
+.tabs
+  padding-top: spacing(10)
+  display: flex
+  align-items: center
+  gap: spacing(5)
+  @include media("<sm")
+    gap: spacing(4)
+    justify-content: center
+    padding-top: spacing(4)
+
+.grayLine
+  height: 1px
+  background: $separator-color
+  @include media("<sm")
+    padding-left: 16px
+    padding-right: 16px
+
+.tabButton
+  width: spacing(40)
+  border-radius: 8px 40px 8px 8px !important
+  &.pressed
+    box-shadow: 4px 4px 8px 0px #050506 inset, -4px -4px 8px 0px rgba(20, 46, 61, 0.39) inset,4px 4px 8px 0px #050506, -4px -4px 8px 0px rgba(20, 46, 61, 0.39)
+    border: 1px solid #1A1A1A
+    & > p
+      color: $pink
+      font-weight: 700

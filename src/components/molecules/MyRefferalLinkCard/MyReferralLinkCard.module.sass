@@ -1,0 +1,34 @@
+@import @/theme
+
+.myreferralLinkBlock
+  height: 166px
+  border-radius: 8px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  padding: spacing(7) spacing(10)
+  display: flex
+  flex-direction: column
+  gap: spacing(7)
+  @include media("<sm")
+    padding: spacing(6)
+    gap: spacing(6)
+
+.myreferralLink
+  max-width: 540px
+  height: 65px
+  border-radius: 8px
+  border: 1px solid var(--grey-dark, #393939)
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 spacing(4)
+
+.title
+  @include media("<sm")
+  font-size: 16px
+
+.subTilte
+  font-size: 12px

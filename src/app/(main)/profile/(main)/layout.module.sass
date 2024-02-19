@@ -1,0 +1,42 @@
+@import @/theme
+
+.wrapper
+  display: flex
+  flex-direction: column
+  padding-top: spacing(40)
+  padding-bottom: 128px
+  @include media("<sm")
+    padding-top: 120px
+
+.userNameWrapper
+  padding-left: 184px
+  padding-right: 184px
+  @media (max-width: 768px)
+    padding-left: 0px
+    padding-right: 0px
+  @media (max-width: 1024px)
+
+    padding-left: 0px
+    padding-right: 0px
+  @media (max-width: 425px)
+
+    padding-left: 0px
+    padding-right: 0px
+    gap: spacing(4)
+
+.contentWrapper
+  display: flex
+  flex-direction: column
+  gap: spacing(10)
+  padding-left: 184px
+  padding-right: 184px
+  @media (max-width: 768px)
+    padding-left: 0px
+    padding-right: 0px
+  @media (max-width: 1024px)
+    padding-left: 0px
+    padding-right: 0px
+  @media (max-width: 425px)
+    padding-left: 16px
+    padding-right: 16px
+    gap: spacing(4)

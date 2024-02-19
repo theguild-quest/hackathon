@@ -1,0 +1,70 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/semi": [
+      "warn",
+      "never"
+    ],
+    "react/jsx-boolean-value": "off",
+    "no-restricted-exports": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "import/prefer-default-export": 0,
+    "react/require-default-props": 0,
+    "react/button-has-type": 0,
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/label-has-associated-control": 0,
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "no-nested-ternary": "off",
+    "react/self-closing-comp": "off",
+    "react/no-unstable-nested-components": "off",
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "no-prototype-builtins": "off",
+    "no-useless-escape": "off",
+    "no-underscore-dangle": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unused-prop-types": 1,
+    "no-confusing-arrow": "off",
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "implicit-arrow-linebreak": "off",
+    "@typescript-eslint/comma-dangle": [
+      "warn",
+      "never"
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "max-len": 0,
+    "react/jsx-no-useless-fragment": "off",
+    // may remove
+    "react/no-unknown-property": 0,
+    "react/prop-types": "off",
+    "consistent-return": "warn",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "react/jsx-one-expression-per-line": "single-child", // switch to 0 for eslint to start working
+    "arrow-parens": "off",
+    "no-console": "warn"
+  }
+}

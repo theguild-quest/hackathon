@@ -1,0 +1,141 @@
+@import @/theme
+
+.myReferralContainer
+  padding: spacing(7) spacing(10)
+  border-radius: 8px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  display: flex
+  flex-direction: column
+  gap: spacing(10)
+  @include media("<sm")
+    padding: spacing(6)
+    gap: spacing(8)
+
+.title
+  @include media("<sm")
+    font-size: 16px
+
+.directBlock
+  display: flex
+  justify-content: space-between
+  @include media("<sm")
+    gap: 15px
+    width: 100%
+    overflow-x: auto
+    white-space: nowrap
+
+.direct
+  display: flex
+  flex-direction: column
+  gap: spacing(5)
+  @include media("<sm")
+    gap: spacing(2)
+
+.directTitle
+  @include media("<sm")
+    font-size: 12px
+
+.searchBlock
+  display: flex
+  align-items: end
+  justify-content: space-between
+
+.searchInput
+  border-radius: 4px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  padding: 19px 22px
+  height: 48px
+  width: 100%
+  max-width: 572px
+  font-size: 14px
+  color: $text-color
+  @include media("<sm")
+    max-width: 231px
+    width: 100%
+
+.filter
+  width: 48px
+  height: 48px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 4px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+
+.userListBlock
+  display: flex
+  flex-direction: column
+  gap: spacing(5)
+  padding-bottom: spacing(2)
+
+.userContainer
+  display: flex
+  flex-direction: column
+  gap: spacing(5)
+
+.userBlock
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.avatarBlock
+  display: flex
+  gap: spacing(3)
+  align-items: center
+
+.nameEmailBlock
+  display: flex
+  flex-direction: column
+  gap: spacing(3)
+
+.countBlock
+  display: flex
+  align-items: center
+  gap: spacing(3)
+
+.line
+  width: 100%
+  height: 1px
+  background: $grey
+
+.nameTitle
+  @include media("<sm")
+    font-size: 14px
+
+.emailTitle
+  @include media("<sm")
+  font-size: 12px
+
+.imageWrap
+  position: relative
+
+.level_1
+  background: #9B51E0
+
+.level_2
+  background: #9B51E0
+
+.level_3
+  background: #56CCF2
+
+.level_4
+  background: #6FCF97
+
+.level
+  bottom: -10px
+  border-radius: 5px
+  color: #0F0B18
+  font-size: 12px
+  font-weight: 600
+  height: 24px
+  position: absolute
+  padding-top: 7px
+  letter-spacing: 1px
+  width: 48px
+  text-align: center

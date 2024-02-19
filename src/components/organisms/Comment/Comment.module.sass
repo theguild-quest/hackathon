@@ -1,0 +1,154 @@
+@import @/theme
+
+.comment
+  padding: spacing(4) 0
+  display: flex
+
+.comment > *
+  padding: 0 spacing(6)
+
+.reply
+  padding-bottom: spacing(4)
+  display: flex
+
+.reply > *
+  padding: 0 spacing(6)
+
+.commentsContainer
+  border-bottom: 1px solid #1E1E22
+
+.commentContainer
+  padding: 0
+  padding-right: spacing(6)
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: spacing(5)
+
+.popoverTrigger, .popoverClose
+  padding: 0
+  background: none
+  border: none
+
+.optionsHeading
+  display: flex
+  align-items: flex-start
+  align-self: flex-start
+  justify-self: flex-start
+
+.popoverSeparator
+  background: $separator-color
+  height: 1px
+  width: 100%
+
+.popoverContent
+  z-index: 500
+  min-width: 300px
+  @include box
+  background: #0C0C0C
+  padding: spacing(8) spacing(6)
+
+.repostPopoverContent
+  min-width: 200px
+
+.optionsContainer
+  padding: spacing(2) 0
+  display: flex
+  align-items: flex-end
+  flex-direction: column
+  gap: spacing(3)
+
+.header
+  display: flex
+  flex-direction: column
+  gap: spacing(3)
+
+.repostedBy
+  width: 100%
+  display: flex
+  gap: spacing(1)
+  align-items: center
+  color: $grey
+
+.userInfoContainer
+  padding-top: spacing(2)
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.userInfo
+  display: flex
+  gap: spacing(3)
+
+.userInfoDetails
+  gap: spacing(1)
+  display: flex
+  flex-direction: column
+  height: 100
+  justify-content: space-evenly
+  font-weight: 500
+
+.userTag
+  color: $grey
+  & > span
+    font-weight: 300
+
+.content
+  display: flex
+  flex-direction: column
+  gap: spacing(5)
+  padding-right: spacing(18)
+
+.postText
+  line-height: 160%
+  overflow-wrap: break-word
+  white-space: pre-wrap
+
+.attachmentsWrapper
+  position: relative
+  display: grid
+  grid-template-rows: 1fr
+  // overflow: hidden
+  width: 100%
+
+.contentImage
+  object-fit: contain
+  width: 100%
+  height: auto
+  border-radius: spacing(2)
+
+.contentImageError
+  border: 1px solid $pink
+
+.footer
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: $grey
+  font-weight: 300
+  & > div
+    display: flex
+    align-items: center
+    gap: spacing(7)
+  & > div:first-child > div
+    display: flex
+    align-items: center
+    gap: spacing(1)
+
+.postActions > div
+
+.userTree
+  padding-top: 0
+  display: flex
+  gap: spacing(5)
+  flex-direction: column
+  align-items: center
+
+.line
+  height: 100%
+  width: 1px
+  background: $placeholder-color
+  opacity: 50%
+
+.seeMore
+  padding: 0 spacing(10)

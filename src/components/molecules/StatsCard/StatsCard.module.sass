@@ -1,0 +1,50 @@
+@import @/theme
+
+.statsBlock
+  border-radius: 8px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  display: flex
+  gap: spacing(8)
+  padding: spacing(7) spacing(10)
+  @include media("<sm")
+    padding: spacing(6)
+    flex-direction: column
+    align-items: center
+    gap: spacing(6)
+
+.title
+  @include media("<sm")
+    font-size: 16px
+
+.subTitle
+  @include media("<sm")
+    font-size: 12px
+
+.statsInfoBlock
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: spacing(6)
+  @media (min-width: 375px) and (max-width: 1024px)
+    gap: spacing(3)
+
+.statsImage
+  border-radius: 8px
+  @media (min-width: 375px) and (max-width: 1024px)
+    width: 295px
+    height: 338px
+    flex-shrink: 0
+
+.infoBlock
+  display: flex
+  flex-direction: column
+
+.info
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border-bottom: 1px solid $separator-color
+  padding: spacing(4) 0

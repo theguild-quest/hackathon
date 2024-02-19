@@ -1,0 +1,78 @@
+@import @/theme
+
+.rewardsBlock
+  border-radius: 8px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  padding: spacing(7) spacing(10)
+  display: flex
+  flex-direction: column
+  gap: spacing(13)
+  @include media("<sm")
+    padding: spacing(6)
+    gap: spacing(8)
+
+.referralRewardsBlock
+  display: flex
+  flex-direction: column
+  gap: spacing(21)
+  padding-bottom: spacing(15)
+  @include media("<sm")
+
+.title
+  font-size: 16px
+
+.subTitle
+  font-size: 18px
+  @include media("<sm")
+    font-size: 16px
+
+.claimedTitle
+  @include media("<sm")
+    font-size: 12px
+
+.referralReward
+  display: flex
+  flex-direction: column
+  gap: spacing(12)
+  @include media("<sm")
+    align-items: center
+    gap: spacing(6)
+
+.claimedContainer
+  display: flex
+  align-items: end
+  justify-content: space-between
+  @include media("<sm")
+    flex-direction: column
+    align-items: center
+    gap: spacing(7)
+
+.claimedBlock
+  display: flex
+  flex-direction: column
+  gap: spacing(4)
+  @include media("<sm")
+    gap: spacing(3)
+
+.countBlock
+  display: flex
+  align-items: center
+  gap: spacing(4)
+  @include media("<sm")
+    gap: 15px
+.count
+  width: 111px
+  height: 46px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 20px
+  font-style: normal
+  font-weight: 500
+  border-radius: 4px
+  border: 0.5px solid #1A1A1A
+  background: rgba(12, 12, 12, 0.50)
+  color: var(--Pink, #DA5A5A)
+  box-shadow: -4px -4px 8px 0px rgba(20, 46, 61, 0.39), 4px 4px 8px 0px #050506

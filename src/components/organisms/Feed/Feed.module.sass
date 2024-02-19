@@ -1,0 +1,19 @@
+@import @/theme
+
+.posts
+  display: flex
+  flex-direction: column
+  gap: spacing(8)
+  margin-bottom: spacing(16)
+  position: relative
+  @include media("<sm")
+    gap: spacing(2)
+
+.endTypography
+  text-align: center
+
+.intersectionTrigger
+  position: absolute
+  bottom: 966px // TRIGGER TO START FETCHING MORE (the least post height is 161px so 161*6 so 6 posts needed before start to fetch again made it for a smooth design)
+  width: 100%
+  height: spacing(1)

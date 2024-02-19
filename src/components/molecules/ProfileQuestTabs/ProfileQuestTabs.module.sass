@@ -1,0 +1,28 @@
+@import @/theme
+
+.profileQuestTabsWrapper
+  display: flex
+  gap: spacing(10)
+  align-items: center
+  justify-content: center
+  &
+
+  @include media("<sm")
+    margin-top: spacing(5)
+    gap: spacing(18)
+
+.questTab.seekerTab.pressed
+  & > p
+    color: $pink
+    font-weight: 700
+
+.questTab.solverTab.pressed
+  & > p
+    color: $yellow
+    font-weight: 700
+
+.questTab
+  width: spacing(40)
+  &.pressed
+    box-shadow: 4px 4px 8px 0px #050506 inset, -4px -4px 8px 0px rgba(20, 46, 61, 0.39) inset,4px 4px 8px 0px #050506, -4px -4px 8px 0px rgba(20, 46, 61, 0.39)
+    border: 1px solid #1A1A1A

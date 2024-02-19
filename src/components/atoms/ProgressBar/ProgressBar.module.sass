@@ -1,0 +1,26 @@
+@import @/theme
+.progressBar
+  width: 100%
+  height: 12px
+  border-radius: 50px
+  background: #432525
+  position: relative
+  @include media("<sm")
+    height: 6px
+
+.progress
+  background: #DA5A5A
+  height: 12px
+  border-radius: 50px
+  @include media("<sm")
+    height: 6px
+
+.progressBarImage
+  width: 35px
+  height: 36px
+  position: absolute
+  top: -13px
+  right: -2px
+  @include media("<sm")
+    width: 33px
+    height: 33px

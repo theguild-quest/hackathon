@@ -1,0 +1,159 @@
+@import @/theme
+
+@keyframes fadeInAnimation
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+.post
+  padding: spacing(6) 0
+  opacity: 0
+  border-radius: spacing(2)
+  @include box()
+  display: flex
+  flex-direction: column
+  gap: spacing(5)
+  animation: fadeInAnimation ease 0.3s
+  animation-iteration-count: 1
+  animation-fill-mode: forwards
+  @include media("<sm")
+    border: none
+    border-bottom: 1px solid $box-stroke
+    padding-top: spacing(4)
+    box-shadow: unset
+    background: transparent
+    // margin: 0 spacing(5)
+
+.header
+  display: flex
+  flex-direction: column
+  padding: 0 spacing(6)
+  @include media("<sm")
+    padding: 0
+
+.repostedBy
+  width: 100%
+  display: flex
+  gap: spacing(1)
+  align-items: center
+  color: $grey
+  margin-bottom: spacing(3)
+
+.userInfoContainer
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.userInfo
+  display: flex
+  gap: spacing(3)
+
+.userInfoDetails
+  display: flex
+  flex-direction: column
+  height: 100
+  justify-content: space-evenly
+  font-weight: 500
+
+.userPicture
+  @include media("<sm")
+    display: none
+
+.userTag
+  color: $grey
+  & > span
+    font-weight: 300
+
+.content
+  display: flex
+  flex-direction: column
+  gap: spacing(5)
+  padding: 0 spacing(6)
+  padding-right: spacing(18)
+  cursor: pointer
+  @include media("<sm")
+    padding: 0
+
+.postText
+  line-height: 160%
+  overflow-wrap: break-word
+  white-space: pre-wrap
+
+.attachmentsWrapper
+  position: relative
+  display: grid
+  grid-template-rows: 1fr
+  // overflow: hidden
+  width: 100%
+
+.contentImage
+  object-fit: contain
+  width: 100%
+  height: auto
+  border-radius: spacing(2)
+
+.contentImageError
+  border: 1px solid $pink
+
+.footer
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: $grey
+  padding: 0 spacing(6)
+  @include media("<sm")
+    padding: 0
+  font-weight: 300
+  & > div
+    display: flex
+    align-items: center
+    gap: spacing(7)
+  & > div:first-child > div
+    display: flex
+    align-items: center
+    gap: spacing(1)
+
+.postActions > div
+
+.comments
+  border-top: 1px solid #1E1E22
+
+.seeMore
+  padding: spacing(4) 0
+  padding-top: spacing(6)
+  text-align: center
+
+.popoverTrigger, .popoverClose
+  padding: 0
+  background: none
+  border: none
+
+.optionsHeading
+  display: flex
+  align-items: flex-start
+  align-self: flex-start
+  justify-self: flex-start
+
+.popoverContent
+  z-index: 500
+  min-width: 300px
+  @include box
+  background: #0C0C0C
+  padding: spacing(8) spacing(6)
+
+.repostPopoverContent
+  min-width: 200px
+
+.optionsContainer
+  padding: spacing(2) 0
+  display: flex
+  align-items: flex-end
+  flex-direction: column
+  gap: spacing(3)
+
+.popoverSeparator
+  background: $separator-color
+  height: 1px
+  width: 100%

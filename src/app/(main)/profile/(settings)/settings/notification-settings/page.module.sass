@@ -1,0 +1,106 @@
+@import @/theme
+
+.notificationSettingsContainer
+  padding: spacing(10) spacing(9) spacing(10) spacing(13)
+  @include box()
+  border-radius: 0 spacing(2) spacing(2) 0
+  border-left: 0
+  width: 100%
+  box-shadow: -15px -15px 15px -15px rgba(0, 0, 0, 0.51) inset, 0px 15px 15px -15px rgba(0, 0, 0, 0.51) inset
+  overflow-y: auto
+  @include media("<sm")
+    padding: 0
+    width: 100%
+    background: unset
+    border: none
+    box-shadow: none
+
+.LinkBlock
+  margin-top: spacing(7)
+  display: flex
+  flex-direction: column
+  gap: spacing(6)
+  width: 100%
+  padding: 0 spacing(6)
+  @media (min-width: 768px)
+    display: none
+
+.link
+  display: flex
+  align-items: center
+  justify-content: center
+  @include media("<sm")
+    width: 100%
+    border-bottom: 1px solid #575758
+    padding-bottom: spacing(4)
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.content
+  display: flex
+  @include media("<sm")
+    display: flex
+    flex-direction: column
+    gap: spacing(9)
+    flex-wrap: nowrap
+
+.arrowBlock
+  display: flex
+  align-items: center
+  justify-content: start
+  @media (min-width: 768px)
+    display: none
+
+.arrowBack
+  cursor: pointer
+  @media (min-width: 768px)
+    display: none
+
+.title
+  @include media("<sm")
+    font-size: 12px !important
+
+.button
+  margin-top: 52px
+  @include media("<sm")
+    margin-top: 46px
+
+.socialNotificationsTable
+  width: 950px
+  @include media("<sm")
+    display: none
+
+.socialNotificationsTable th
+  text-align: start
+  padding-top: 0
+  padding-bottom: 10px
+
+.socialNotificationsTable td
+  padding: 6px 0px
+  text-align: start
+
+.jobNotificationsTable
+  margin-top: spacing(10)
+  width: 950px
+  @include media("<sm")
+    display: none
+
+.jobNotificationsTable th
+  text-align: start
+  padding-top: 0
+  padding-bottom: 12px
+
+.jobNotificationsTable td
+  padding: 6px 0px
+  text-align: start
+
+.profileSettingBlock
+  @include media("<sm")
+    display: none
+
+.loadingContainer
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center

@@ -1,0 +1,132 @@
+@import @/theme
+
+.manageConnectionsContainer
+  padding: spacing(10) spacing(9) spacing(10) spacing(13)
+  @include box()
+  border-radius: 0 spacing(2) spacing(2) 0
+  border-left: 0
+  width: 100%
+  box-shadow: -15px -15px 15px -15px rgba(0, 0, 0, 0.51) inset, 0px 15px 15px -15px rgba(0, 0, 0, 0.51) inset
+  overflow-y: auto
+  @include media("<sm")
+    padding: 0
+    width: 100%
+    background: unset
+    border: none
+    box-shadow: none
+
+.content
+  display: flex
+  flex-direction: column
+  @include media("<sm")
+    display: flex
+    flex-direction: column
+    gap: spacing(9)
+
+.arrowBlock
+  display: flex
+  align-items: center
+  justify-content: start
+  @media (min-width: 768px)
+    display: none
+
+.arrowBack
+  cursor: pointer
+  @media (min-width: 768px)
+    display: none
+
+.input
+  width: 426px !important
+  @include media("<sm")
+    min-width: 0 !important
+    width: 100% !important
+
+.textarea
+  width: 426px !important
+  @include media("<sm")
+    min-width: 0 !important
+    width: 100% !important
+    min-height: 227px !important
+
+.iconBlock
+  display: flex
+  align-items: center
+  gap: spacing(3)
+
+.titleBlock
+  display: flex
+  align-items: center
+  gap: spacing(3)
+
+.title
+  @include media("<sm")
+    font-size: 14px
+
+.inputBlock
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @include media("<sm")
+    flex-direction: column-reverse
+    align-items: start
+    gap: spacing(6)
+    margin-top: spacing(10)
+
+.searchInput
+  height: 45px !important
+  padding: 18px 20px !important
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  @include media("<sm")
+    min-width: 344px !important
+    width: 100% !important
+
+.userList
+  display: flex
+  flex-direction: column
+  gap: spacing(3)
+  @include media("<sm")
+    margin-top: spacing(3)
+
+.userBlock
+  padding: spacing(3) spacing(6)
+  max-width: 1148px
+  width: 100%
+  height: 70px
+  border-radius: 8px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @include media("<sm")
+    padding: spacing(4) spacing(5)
+
+.avatarBlok
+  display: flex
+  align-items: center
+  gap: 18px
+  @include media("<sm")
+    gap: spacing(3)
+
+.image
+  border-radius: 50%
+  @include media("<sm")
+    width: 38px
+    height: 38px
+
+.button
+  @include media("<sm")
+    width: 90px
+
+.profileSettingBlock
+  @include media("<sm")
+    display: none
+
+.loadingContainer
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center

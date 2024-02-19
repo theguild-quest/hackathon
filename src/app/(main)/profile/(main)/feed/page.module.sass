@@ -1,0 +1,101 @@
+@import @/theme
+
+.feedContainer
+  display: flex
+  gap: spacing(8)
+  align-items: start
+  justify-content: space-between
+  @media (min-width: 375px) and (max-width: 1024px)
+    flex-direction: column
+    gap: spacing(6)
+    align-items: center
+    .sortPostBlock
+      order: 2
+    .interestsBlock
+      order: 3
+    .CreatePostInput
+      order: 1
+
+.container
+  width: 100%
+  overflow-y: auto
+  border-radius: spacing(2)
+  padding: 0 spacing(1)
+  margin-top: calc(spacing(8) * -1)
+  @include media("<sm")
+    width: 100%
+  &::-webkit-scrollbar
+    height: 0
+    width: 0
+  &::-webkit-scrollbar-track
+    background: transparent
+  &::-webkit-scrollbar-thumb
+    background: transparent
+
+.sortPostBlock
+  display: flex
+  flex-direction: column
+  gap: spacing(11)
+  @media (max-width: 425px)
+    flex-direction: row
+    gap: spacing(4)
+
+.savePostButton
+  width: 355px
+  height: 58px
+  border-radius: 8px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+  padding: spacing(6)
+  @media (max-width: 425px)
+    width: 140px
+    padding: spacing(6) spacing(4)
+
+.pressed
+  color: $pink
+
+.title
+  @media (max-width: 425px)
+    font-size: 12px
+
+.icon
+  @media (max-width: 425px)
+    width: 23px
+    height: 24px
+
+.interestsBlock
+  display: flex
+  flex-direction: column
+  gap: spacing(11)
+  @media (max-width: 425px)
+    gap: spacing(6)
+
+.interestBlock
+  width: 355px
+  min-height: 176px
+  border-radius: 8px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  @media (max-width: 425px)
+    width: 100%
+
+.titleBlock
+  height: 50px
+  border-bottom: 1px solid $separator-color
+
+.title
+  margin: spacing(6) spacing(5)
+
+.listInterest
+  padding: spacing(6)
+
+.listInterest
+  display: flex
+  flex-direction: column
+  gap: spacing(4)

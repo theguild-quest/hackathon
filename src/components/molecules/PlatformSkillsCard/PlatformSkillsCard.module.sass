@@ -1,0 +1,42 @@
+@import @/theme
+
+.platformSkillsBlock
+  height: 476px
+  border-radius: 8px
+  border: 1px solid #1E1E22
+  background: rgba(12, 12, 12, 0.50)
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.51) inset
+  position: relative
+  @include media("<sm")
+    height: 306px
+
+.title
+  margin: spacing(7) spacing(10)
+  @include media("<sm")
+    margin: spacing(6) spacing(6)
+    font-size: 16px
+
+.image
+  display: flex
+  align-items: center
+  justify-content: center
+  @include media("<sm")
+    display: none
+
+.imageSmall
+  display: flex
+  align-items: center
+  justify-content: center
+  @media (min-width: 769px)
+    display: none
+
+.text
+  line-height: 32px
+  text-align: center
+  font-weight: 700
+  position: absolute
+  top: 51%
+  left: 48%
+  transform: translate(-50%, -50%)
+  @include media("<sm")
+    font-size: 18px

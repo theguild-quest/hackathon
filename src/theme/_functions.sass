@@ -1,0 +1,14 @@
+$space-unit: 4px
+// $space-1: $space-unit
+// $space-2: calc(2 * $space-unit)
+// $space-3: calc(3 * $space-unit)
+// $space-4: calc(4 * $space-unit)
+// $space-5: calc(6 * $space-unit)
+// $space-6: calc(8 * $space-unit)
+// $space-7: calc(12 * $space-unit)
+// $space-8: calc(20 * $space-unit)
+
+@function spacing($n)
+  @return $space-unit * $n
+  // $spaces: $space-1, $space-2, $space-3, $space-4, $space-5, $space-6, $space-7, $space-8
+  // @return nth($spaces, $n)

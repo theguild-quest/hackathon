@@ -1,0 +1,34 @@
+@import @/theme
+
+.questStatsContainer
+  display: flex
+  gap: spacing(3)
+  @media (min-width: 375px) and (max-width: 1024px)
+    flex-direction: column
+    gap: spacing(6)
+    align-items: center
+
+  .statsCard
+    order: 1
+
+  .xpCard
+    order: 2
+
+  .platformSkills
+    order: 3
+
+  .myreferralLink
+    order: 4
+
+  .rewards
+    order: 6
+
+  .myReferral
+    order: 5
+
+.block
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: spacing(3)
+

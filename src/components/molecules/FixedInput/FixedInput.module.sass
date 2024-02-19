@@ -1,0 +1,29 @@
+@import @/theme
+
+.wrapper
+  display: flex
+  flex-direction: column
+  gap: spacing(4)
+
+.fixedInput
+  @include box()
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 spacing(4)
+  white-space: nowrap
+  width: 100%
+  & > *:first-child
+    overflow: hidden
+    overflow-x: auto
+    margin: spacing(7) 0
+    &::-webkit-scrollbar
+      height: 0
+    &::-webkit-scrollbar-track
+      background: transparent
+    &::-webkit-scrollbar-thumb
+      background: transparent
+  & > *:not(:first-child)
+    cursor: pointer
+  @media (max-width: 767px)
+    gap: spacing(3)

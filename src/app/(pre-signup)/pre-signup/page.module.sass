@@ -1,0 +1,251 @@
+@import @/theme
+
+.main
+  position: relative
+  &.loading
+    height: 100vh
+    overflow: hidden
+  @media (max-width: 767px)
+    height: 100%
+
+.signOutLink
+  position: absolute
+  left: 80px
+  bottom: 80px
+  @media (max-width: 767px)
+    left: 50%
+    bottom: 32px
+    transform: translateX(-50%)
+
+.guildLogo
+  position: absolute
+  top: spacing(10)
+  left: 100px
+  width: 144px
+  height: auto
+  @media (max-width: 767px)
+    display: none
+
+.guildLogoIcon
+  display: none
+  position: absolute
+  width: 32px
+  height: 36px
+  top: 60px
+  left: 171px
+  @media (max-width: 767px)
+    display: block
+
+.guildPanel
+  position: absolute
+  top: spacing(10)
+  height: 250px
+  right: spacing(10)
+  z-index: -2
+  width: auto
+  @media (max-width: 767px)
+    display: none
+
+.guildGif
+  position: absolute
+  right: spacing(11)
+  height: 250px
+  top: spacing(10)
+  width: auto
+  z-index: 10000
+  transform: translate(0%, 0%)
+  transition: 0.3s ease
+  @media (max-width: 767px)
+    display: none
+  &.loading
+    z-index: 10000
+    top: 50%
+    right: 50%
+    transform: translate(50%, -50%)
+    height: 50%
+    width: auto
+    transition: top 0.3s ease, right 0.3s ease, height 0.3s ease, width 0.3s ease
+    @media (max-width: 767px)
+      top: 50svh
+      left: 50%
+      width: 50%
+      height: auto
+      transform: translate(-50%, -50%)
+      display: block
+
+.content
+  padding: spacing(35) spacing(20) 140px spacing(20)
+  height: 100%
+  width: 100%
+  display: flex
+  gap: 48px
+  flex-direction: row
+  & > div
+    flex-grow: 1
+  & > div:first-child
+    flex-grow: 0.5
+  @media (max-width: 1440px)
+    gap: spacing(6)
+  @media (max-width: 767px)
+    padding: spacing(35) spacing(4) spacing(20) spacing(4)
+    flex-direction: column
+    & > div
+      flex-grow: unset
+
+.profileInfo
+  display: flex
+  flex-direction: column
+  gap: spacing(7)
+  @media (max-width: 1920px)
+    width: 30%
+  @media (max-width: 1440px)
+    width: 30%
+  @media (max-width: 767px)
+    width: 100%
+
+.userInfo
+  color: $grey
+  @include box()
+  display: flex
+  flex-direction: column
+  gap: spacing(4)
+  padding: spacing(6) spacing(8) spacing(6) spacing(4)
+
+.actionLink
+  color: $yellow
+  text-decoration: underline
+  cursor: pointer
+
+.divider
+  height: 1px
+  width: 100%
+  background: $separator-color
+
+.required
+  margin-left: spacing(4)
+  color: $pink
+  @media (max-width: 767px)
+    display: block
+    margin: 0
+    margin-top: spacing(1)
+
+.refCountLabel
+  display: flex
+  align-items: center
+  gap: spacing(4)
+
+.refCountWrapper
+  display: flex
+  flex-direction: column
+  margin-top: auto
+  gap: spacing(4)
+
+.refCount
+  @include box()
+  display: flex
+  flex-direction: column
+  gap: spacing(4)
+  padding: spacing(6) spacing(4)
+
+.directReferrals
+  color: $yellow
+  display: flex
+  justify-content: space-between
+  align-items: center
+  & > *:not(:first-child)
+    font-weight: 700
+
+.refContent
+  font-weight: 400 !important
+
+.pointsLine
+  display: flex
+  align-items: column
+  justify-content: space-between
+  margin-bottom: spacing(7)
+  @media (max-width: 767px)
+    // padding-top: spacing(35)
+    flex-direction: column
+    gap: spacing(12)
+
+.leaderboardHeader
+  display: flex
+  flex-direction: column
+  gap: spacing(4)
+  margin-bottom: spacing(4)
+  margin-top: auto
+  @media (max-width: 767px)
+    margin: spacing(4) 0
+
+.points
+  display: flex
+  flex-direction: column
+
+.indirectReferrals
+  & > *:first-child
+    margin-bottom: spacing(6)
+
+.offset
+  display: flex
+  flex-direction: column
+  padding-left: spacing(9)
+  gap: spacing(4)
+  & > .refLine
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.pointsLabel
+  margin-bottom: spacing(2)
+
+.signUps
+  display: flex
+  flex-direction: column
+  gap: spacing(7)
+  justify-content: flex-end
+  margin-top: auto
+
+  @media (max-width: 1920px)
+    width: 25%
+  @media (max-width: 1440px)
+    width: 30%
+  @media (max-width: 767px)
+    width: 100%
+  & > div
+    min-height: 500px
+    max-height: 500px
+
+.twitterProvider
+  width: 100%
+  display: flex
+  position: relative
+  flex-direction: column
+  gap: spacing(4)
+
+.twitPic
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  width: 38px
+  height: 38px
+  border-radius: 38px
+  border: 0.5px solid white
+
+.loadingWrapper
+  width: 100%
+  height: 100vh
+  position: absolute
+  z-index: 1399 // because snackbars are 1400 z-index let's not cover them
+  top: 0
+  left: 0
+  backdrop-filter: blur(30px)
+  opacity: 0
+  transition: 0.5s ease
+  visibility: hidden
+  &.loading
+    opacity: 1
+    transition: 0.5s ease
+    visibility: visible
+    html
+      overflow: hidden

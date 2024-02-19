@@ -1,0 +1,20 @@
+@import @/theme
+
+.bgWrap
+  position: fixed
+  height: 100%
+  width: 100%
+  left: 0
+  top: 0
+  object-fit: fill
+  z-index: -3
+  pointer-events: none
+
+.container > main
+  height: 100vh
+  position: relative
+  z-index: 100
+  padding-top: 114px // TBD: Header height static
+  overflow-y: hidden
+  @include media("<sm")
+    padding-top: 0
